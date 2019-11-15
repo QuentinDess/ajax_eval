@@ -11,8 +11,11 @@ document.querySelector(".fa-search").addEventListener("click", () => {
     .then((response) => {
         response.json()
         .then((data) => {
-        // A chaque clic du bouton, on vide notre balise search result
-        document.querySelector(".search_result").innerHTML = '';
+        // A chaque clic du bouton, on vide notre vieux tableux
+        //le try catch nous permet de gérer les erreur lors de la première recherche
+        try{document.querySelector("table").innerHTML = '';
+            document.querySelector("table").style.display="none";}
+        catch{};
         
         // Création de la <table> en HTML
         let tableElement = document.createElement("table");
@@ -22,7 +25,8 @@ document.querySelector(".fa-search").addEventListener("click", () => {
         tableElement.style.marginLeft="auto";
         tableElement.style.marginRight="auto";
         tableElement.style.width="90%";
-        document.querySelector(".search_result").appendChild(tableElement);
+        //on le met en haut du main avant le paragraphe 
+        document.querySelector("main").insertBefore(tableElement, document.querySelector("article"));
 
         // Création de notre <thead> en HTML
         let theadElement = document.createElement("thead");
