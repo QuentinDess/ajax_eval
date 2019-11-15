@@ -11,8 +11,6 @@ document.querySelector(".fa-search").addEventListener("click", () => {
     .then((response) => {
         response.json()
         .then((data) => {
-            debugger;
-          
         // A chaque clic du bouton, on vide notre balise search result
         document.querySelector(".search_result").innerHTML = '';
         
@@ -104,6 +102,7 @@ document.querySelector(".fa-search").addEventListener("click", () => {
         trElement2.appendChild(tdElement6);
         trElement2.appendChild(tdElement7);
         trElement2.appendChild(tdElement8);
+        // boucle qui centre le contenu de chaque td
         document.querySelectorAll("td").forEach(element => {
             element.style.textAlign="center";
             
