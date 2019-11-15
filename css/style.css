@@ -3,6 +3,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    height: 100%;
     
 }
 header{
@@ -102,7 +103,9 @@ form{
     align-content: space-between;
     padding: 2%;
 }
-
+.contact{
+    height: 100vh;
+}
 @media screen and (max-width: 600px){
     .menu{
         display: none;
