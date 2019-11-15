@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    width: auto;
+    height: 10vh;
+    background: black;
+    border-bottom: yellow 1px solid;
+    color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    width: auto;
+    height: 83vh;
+    background: rgba(141, 141, 89, 0.637);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between
+}
+footer{
+    width: auto;
+    height:7vh;
+    background: black;
+    border-top: yellow 1px solid;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+}
+article{
+    WIDTH: 80%;
+    margin: auto;
+    padding: 2%;
+    BORDER: Yellow 1px solid;
+}
+section{
+    WIDTH: 80%;
+    margin: auto;
+    padding: 2%;
+    BORDER: Yellow 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+.capture{
+    width: inherit;
+    background: pink;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 300px;
+
+}
+LI{
+    list-style: none;
+}
+nav{
+    display: flex;
+   
+}
+
+.search_bar{
+    align-self: center;
+}
+.footer_nav{
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+}
+
+.fab{
+    padding: 2%;
+}
+.footer_li{
+    margin: 2%;
+}
+.mini_menu{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color:yellow;
+}
+form{
+    height:50%;
+    width:50%;
+    margin:auto;
+    border:yellow 1px solid;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    padding: 2%;
+}
+
+@media screen and (max-width: 600px){
+    .menu{
+        display: none;
+    }
+    .mini_menu{
+        display: block;
+        align-self: center;
+    }
+    section{
+        width: 90%;
+    }
+    article{
+        width: 90%;
+    }
+    section{
+        flex-direction: column;
+    }
+    main{
+        height: auto;
+    }
+    footer{
+        height: 7%;
+    }
+    header{
+        height: 10%;
+    }
+    form{
+        width:80%;
+    }
+}
